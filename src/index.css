@@ -5,6 +5,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    .navbar.py-3{
+        padding: .6rem !important;
+    }
+    .navbar-toggler{
+        border: none !important;
+    }
+
   .buttons .btn{
     font-size: .5rem;
     padding: 5px 3px;
@@ -51,6 +58,12 @@ div.buttons.d-flex.justify-content-center.mb-5.pb-5{
   .row button, .row a{
     padding: .2rem .3rem !important;
     font-size: .9rem;
+  }
+  .row .card{
+    width: 100% !important;
+  }
+  .card-body p{
+    display: block !important;
   }
 
 
