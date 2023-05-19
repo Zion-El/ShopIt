@@ -25,4 +25,8 @@ div.buttons.d-flex.justify-content-center.mb-5.pb-5{
   .container img{
     height: 15rem;
   }
+  .products .container{
+    height: 100rem;
+    overflow: scroll;
+  }
 }
