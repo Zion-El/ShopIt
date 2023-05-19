@@ -1,0 +1,52 @@
+import React, { useState } from 'react';
+import LoginImg from '../assets/images/signIn.jpeg'
+import { Alert } from 'react-bootstrap';
+
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validation logic
+    if (!email || !password ) {
+      setErrorMessage('Please fill in all fields.');
+    } else {
+      // Submit form data to the server or perform other actions
+      console.log('Form submitted:', email, password);
+    }
+  };
+
+  return (
+    <div>
+    <div className="container mb-5">
+        <div className="row py-3">
+            <div className="col-md-5  d-flex align-items-center justify-content-center">
+                <img src={LoginImg} alt="Contact Us" height="300px" width="300px" />
+            </div>
+            <div className="col-md-6 py-5" style={{height:"80vh"}}>
+                <form onSubmit={handleSubmit}>
+                    {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
+                   
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" value={(e)=>setEmail(e.target.value)} id="exampleFormControlInput1" placeholder="name@example.com"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleForm" class="form-label">Password</label>
+                        <input type="text" class="form-control" value={(e)=>setPassword(e.target.value)} id="exampleForm" />
+                    </div>
+
+
+                      <button type="submit" class="btn btn-dark">Sign In</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+  );
+};
+
+export default Login;
