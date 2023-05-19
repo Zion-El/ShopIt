@@ -25,8 +25,33 @@ div.buttons.d-flex.justify-content-center.mb-5.pb-5{
   .container img{
     height: 15rem;
   }
-  .products .container{
+  /* .products .container{
     height: 100rem;
     overflow: scroll;
+  } */
+  .row img{
+    width: 12rem;
+    margin: auto;
   }
+  .row h1{
+    font-size: 18px;
+  }
+  .row .lead, .row h3{
+    font-size: 1rem;
+    display: inline-block;
+  }
+  h3.display-6.fw-bold.my-4{
+    margin-left: 7rem;
+    margin-top: .5rem!important;
+    margin-bottom: .2rem!important;
+  }
+  .row p{
+    font-size: .8rem !important;
+  }
+  .row button, .row a{
+    padding: .2rem .3rem !important;
+    font-size: .9rem;
+  }
+
+
 }
