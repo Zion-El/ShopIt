@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons .btn{
+    font-size: .5rem;
+    padding: 5px 3px;
+  } 
+div.buttons.d-flex.justify-content-center.mb-5.pb-5{
+    margin-bottom: 0 !important;
+    padding-bottom: 3rem !important;
+  } 
+  .card img{
+    height: 32rem;
+  }
+  div.container.py-5.my-5{
+    margin-top: 0 !important;
+  }
+  div.col-12.mb-5{
+    margin-bottom: 0 !important;
+  }
+  .container img{
+    height: 15rem;
+  }
+}
